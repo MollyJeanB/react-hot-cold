@@ -10,4 +10,9 @@ import "./index.css";
 
 import Game from "./components/game";
 
-ReactDOM.render(<Game />, document.getElementById("root"));
+ReactDOM.render(
+  <Provider store={store}>
+    <Game />
+  </Provider>,
+  document.getElementById("root")
+);
